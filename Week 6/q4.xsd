@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="collection">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="recipe">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="title" type="xs:string"/>
+                        <xs:element name="ingredient">
+                            <xs:complexType>
+                                <xs:attribute name="name" type="xs:string"/>
+                                <xs:attribute name="amount" type="xs:int"/>
+                                <xs:attribute name="unit" type="xs:int"/>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="preparation">
+                            <xs:complexType>
+                                <xs:all>
+                                    <xs:element name="step" type="xs:string"/>
+                                </xs:all>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="comment" type="xs:string"/>
+                        <xs:element name="nutrtion">
+                            <xs:complexType>
+                                <xs:attribute name='protein' type="xs:int"/>
+                                <xs:attribute name='carbohydrates' type="xs:int"/>
+                                <xs:attribute name='fat' type="xs:int"/>
+                                <xs:attribute name='alcohol' type="xs:int"/>
+                                <xs:attribute name='calories' type="xs:int"/>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:schema>

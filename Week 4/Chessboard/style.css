@@ -1,0 +1,14 @@
+body{
+    background-image: linear-gradient(to right,rgb(177, 164, 164) , white);
+}
+table{
+    border : 10px solid green;
+}
+.black{
+    background-color: black;
+}
+td{
+    color:blue;
+    font-size: 25px;
+    height: 25px;
+}

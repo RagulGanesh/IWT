@@ -1,0 +1,42 @@
+.head{
+    /* border: 2px solid black; */
+    background-color: aqua;
+    font-weight: 100;
+    padding: 24px;
+    font-size: 25px;
+    text-align: center;
+
+}
+/* input{
+    margin: 5px;
+    align-content: stretch;
+    display: inline;
+}
+.name,.password,.cpassword,.fname,.mname,.pno,.gender,.dob,.add,.bg,.photo,.course,.dept,.email{
+    padding: 5px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+label {
+    width:100px;
+} */
+table{
+    border-radius: 5%;
+    background-color: #bca2d4;
+    width: 50%;
+    padding: 50px;
+    padding-left:10%;
+    background-image: linear-gradient(rgb(71,180,231),white);
+}
+#one{
+    font-weight: 200;
+    font-size: x-large;
+}
+.two{
+    border-radius: 20px;
+    width: 70px;
+}
+label,#one{
+    font-style: italic;
+    font-weight: bolder;
+}

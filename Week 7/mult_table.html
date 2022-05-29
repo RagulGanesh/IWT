@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+    <script>
+        var rows=prompt("Enter the number of rows required in the multiplication table : ");
+        var columns=prompt("Enter the number of columns required in the multiplication table : ");
+        if(rows==null||rows==""){
+            rows=10;
+        }
+        if(columns==null||columns==""){
+            columns=10;
+        }
+        document.write("<h1 align='center'>Multiplication Table</h1>")
+        createTable(rows,columns);
+        function createTable(rows,columns){
+            document.write("<center>")
+            document.write("<table cellpadding=20 cellspacing=10 border=2>")
+            for(var i=1;i<=rows;i++){
+                var j=1;
+                document.write("<tr>");
+                while(j<=columns){     
+                    document.write("<td>"+(i*j)+"</td>")                                 
+                    j++;
+                }
+                document.write("</tr>")
+                j=1;
+            }
+            document.write('</table>')
+            document.write("</center")
+        }        
+    </script>
+</head>
+<body>
+</body>
+</html>

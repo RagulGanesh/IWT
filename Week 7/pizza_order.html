@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <script>
+        function calCost() {
+            var cost1 = document.getElementById('cpiz').value;
+            var cost2 = document.getElementById('ppiz').value;
+            var cost3 = document.getElementById('vpiz').value;
+            if(cost1==null||cost1==""){
+                cost1="0"
+                document.getElementById('cpiz').value="0"
+            }
+            if(cost2==null||cost2==""){
+                cost2="0"
+                document.getElementById('ppiz').value="0"
+            }
+            if(cost3==null||cost3==""){
+                cost3="0"
+                document.getElementById('vpiz').value="0"
+            }
+            var price1=document.getElementById('price1').innerHTML;
+            var price2=document.getElementById('price2').innerHTML;
+            var price3=document.getElementById('price3').innerHTML;
+            var totalcost = parseInt(cost1)*parseInt(price1) + parseInt(cost2)*parseInt(price2) + parseInt(cost3)*parseInt(price3);
+            document.getElementById('totalcost').value= totalcost;
+        }
+        function cancelOrder(){
+            document.getElementById('cpiz').value="";
+            document.getElementById('ppiz').value="";
+            document.getElementById('vpiz').value="";
+            document.getElementById('totalcost').value="";
+        }
+        function confirmOrder(){
+            confirm("Your order will be ready by 10 minutes");
+            document.getElementById('cpiz').value="";
+            document.getElementById('ppiz').value="";
+            document.getElementById('vpiz').value="";
+            document.getElementById('totalcost').value="";
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Pizza Order Form</h1>
+    <table cellpadding="20" cellspacing="2" border="2">
+        <tr>
+            <th>Item Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+        <tr>
+            <td>Chicken Pizza</td>
+            <td id="price1">100</td>
+            <td><input type="text" name="" id="cpiz"></td>
+        </tr>
+        <tr>
+            <td>Paneer Pizza</td>
+            <td id="price2">80</td>
+            <td><input type="text" name="" id="ppiz"></td>
+        </tr>
+        <tr>
+            <td>Veg Pizza</td>
+            <td id="price3">70</td>
+            <td><input type="text" name="" id="vpiz"></td>
+        </tr>
+    </table>
+    <br>
+    <button onclick="calCost()">Total Cost</button>
+    <input type="text" name="" id="totalcost">
+    <br>
+    <br>
+    <button onclick="confirmOrder()">Confirm Order</button>
+    <button onclick="cancelOrder()">Cancel Order</button>
+
+</body>
+
+</html>

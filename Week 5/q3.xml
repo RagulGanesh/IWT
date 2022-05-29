@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE collection[
+<!ELEMENT collection (description,recipe*)>
+<!ELEMENT description ANY>
+<!ELEMENT recipe (title,ingredient*,preparation,comment?,nutrition)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT ingredient EMPTY>
+<!ATTLIST ingredient name CDATA #REQUIRED
+                     amount CDATA #IMPLIED
+                     unit CDATA #IMPLIED>
+<!ELEMENT preparation (step*)>
+<!ELEMENT step (#PCDATA)>
+<!ELEMENT comment (#PCDATA)>
+<!ELEMENT nutrition EMPTY>
+<!ATTLIST nutrition protein CDATA #REQUIRED
+                    carbohydrates CDATA #REQUIRED
+                    fat CDATA #REQUIRED
+                    calories CDATA #REQUIRED
+                    alcohol CDATA #IMPLIED>
+]>
+
+<collection>
+    <description>
+        Some recipes used for the xml tutorial.
+    </description>
+    <recipe>
+        <title>Fried Rice</title>
+        <ingredient name="rice" amount="2" unit="4"/>
+        <ingredient name="salt" amount="0.5" unit="3"/>
+        <preparation>
+            <step>Preheat a large skillet or wok to medium heat. Pour sesame oil in the bottom. </step>
+            <step>Slide the onion, peas and carrots to the side, and pour the beaten eggs onto the other side. Using a spatula, scramble the eggs.</step>
+            <step>Add the rice to the veggie and egg mixture. Pour the soy sauce on top.</step>
+        </preparation>
+        <comment>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ipsum perferendis ducimus corrupti est eius. Repudiandae nihil nisi perspiciatis consequatur culpa suscipit laborum velit corporis, perferendis dolorum modi ipsam! Rerum velit reiciendis fugiat beatae. Maxime mollitia eaque ea nam voluptatem libero, nobis accusantium pariatur sed aliquid odit minima quae officiis.
+        </comment>
+        <nutrition protein="4.7g" carbohydrates="31g" calories="163" alcohol="0" fat="2.3g"/>
+    </recipe>
+</collection>

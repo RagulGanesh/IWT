@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/JavaScript" src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200&display=swap" rel="stylesheet">
+    <style>
+        input {
+            display: inline-block;
+        }
+
+        table {
+            width: 100%;
+            margin: auto;
+        }
+
+        td {
+            font-size: 25px;
+            font-family: 'Tajawal', sans-serif;
+            font-weight: bold;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            font-size: 25px;
+        }
+        input[type="button"]{
+            border-width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="success.html" onsubmit="return validate()">
+        <table cellpadding=20 cellspacing=2 border=2>
+            <tr>
+                <td colspan="2" align="center">Student Registration Form</td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>
+                    <input type="text" id="n">
+                    <span id="name"> </span>
+                </td>
+            </tr>
+            <tr>
+                <td>Father Name</td>
+                <td>
+                    <input type="text" name="" id="fn">
+                    <span id="fname"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Postal Address</td>
+                <td>
+                    <input type="text" name="" id="pa">
+                    <span id="padd"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Personal Address</td>
+                <td>
+                    <input type="text" name="" id="pera">
+                    <span id="peradd"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" id="" value=1>Male
+                    <input type="radio" name="gender" id="" value=2>Female
+                    <span id="gen"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td>
+                    <select id="city">
+                        <option value="">City</option>
+                        <option value="1">Hyderabad</option>
+                        <option value="2">Chennai</option>
+                        <option value="3">Delhi</option>
+                    </select>
+                    <span id="cities"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Course</td>
+                <td>
+                    <select id="course">
+                        <option value="">Course</option>
+                        <option value="1">C</option>
+                        <option value="2">C++</option>
+                        <option value="3">Python</option>
+                        <option value="4">Java</option>
+                    </select>
+                    <span id="courses"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>District</td>
+                <td>
+                    <select id="district">
+                        <option value="">District</option>
+                        <option value="1">A</option>
+                        <option value="2">B</option>
+                        <option value="3">C</option>
+                    </select>
+                    <span id="districts"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    State
+                </td>
+                <td>
+                    <select id="state">
+                        <option value="">State</option>
+                        <option value="1">Telangana</option>
+                        <option value="2">Tamil Nadu</option>
+                        <option value="3">Kerala</option>
+                    </select>
+                    <span id="states"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    PinCode
+                </td>
+                <td>
+                    <input type="text" name="" id="pcode">
+                    <span id="pincodes"></span>
+                </td>
+
+            </tr>
+            <tr>
+                <td>EmailId</td>
+                <td>
+                    <input type="text" name="" id="eid">
+                    <span id="emailds"></span>
+                </td>
+
+            </tr>
+            <tr>
+                <td>DOB</td>
+                <td><input type="text" name="" id="dob"><span id="dateofbirth"></span></td>
+
+            </tr>
+            <tr>
+                <td>MobileNo</td>
+                <td><input type="text" name="" id="mobile"><span id="mno"></span></td>
+
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+                <td><input type="password" name="" id="pass"><span id="p"></span></td>
+            </tr>
+            <tr>
+                <td>
+                    Confirm Password
+                </td>
+                <td>
+                    <input type="password" name="" id="cpass">
+                    <span id="cp"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="reset" value="Reset"></td>
+                <td><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        #box{
+            width: 500px;
+            height: 20px;
+            align-self: center;
+        }
+        td{
+            width: 100px;
+        }
+        td button{
+            width: 100px;
+            height: 50px;
+            color: blue;
+            font-size: 25px;
+        }
+    </style>
+    <script src="cal.js"></script>
+</head>
+<body>
+    <h1 align="center">Calculator</h1>
+    <table cellpadding="20" cellspacing="2" border="2" align="center">
+        <tr>
+            <td colspan="5" id="one">
+                <input type="text" name="" id="box">
+            </td>
+        </tr>
+       <tr>
+           <td><button value="1" onclick="fillBox('1')">1</button></td>
+           <td><button value="2" onclick="fillBox('2')">2</button></td>
+           <td><button value="3" onclick="fillBox('3')">3</button></td>
+           <td><button value="+" onclick="fillBox('+')">+</button></td>
+       </tr>
+       <tr>
+           <td><button value="4" onclick="fillBox('4')">4</button></td>
+           <td><button value="5" onclick="fillBox('5')">5</button></td>
+           <td><button value="6" onclick="fillBox('6')">6</button></td>
+           <td><button value="-" onclick="fillBox('-')">-</button></td>
+       </tr>
+       <tr>
+           <td><button value="7" onclick="fillBox('7')">7</button></td>
+           <td><button value="8" onclick="fillBox('8')">8</button></td>
+           <td><button value="9" onclick="fillBox('9')">9</button></td>
+           <td><button value="" onclick="fillBox('*')">*</button></td>
+       </tr>
+       <tr>
+           <td><button value="=" onclick="document.getElementById('box').value=eval(document.getElementById('box').value)">=</button></td>
+           <td><button value="C" onclick="document.getElementById('box').value=''">C</button></td>
+           <td><button value="0" onclick="fillBox('0')">0</button></td>
+           <td><button value="/" onclick="fillBox('/')">/</button></td>
+       </tr>
+    </table>
+</body>
+</html>

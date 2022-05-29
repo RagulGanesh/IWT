@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<bibliography xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:SchemaLocation="q3.xsd">
+    <book ISBN="A1234" price="400">
+        <title>Home Alone</title>
+        <author>GR Rohith</author>
+        <publisher>Hemananda</publisher>
+        <year>2022</year>
+        <section>
+            <title>Home Alone</title>
+            <content>
+                <i>Drama</i>
+                <i>Fun</i>
+                <i>Family</i>
+            </content>
+        </section>
+    </book>
+    <book ISBN="B123456" price="10000">
+        <title>Beast</title>
+        <author>Nelson Dilipkumar</author>
+        <publisher>Sun Pictures</publisher>
+        <year>2022</year>
+        <section>
+            <title>Beast</title>
+            <content>
+                <i>Action</i>
+                <i>Drama</i>
+                <i>dark Comedy</i>
+            </content>
+        </section>
+    </book>
+</bibliography>
